@@ -1,0 +1,24 @@
+# 데이터 처리
+pandas
+polars
+pyarrow
+
+# 시각화
+seaborn
+matplotlib
+plotly
+
+# 통계 / 머신러닝
+scipy
+scikit-learn
+joblib
+
+# 스키마 검증
+pydantic>=2
+
+# 노트북 실행
+jupyter
+ipykernel
+
+# 기타
+requests
