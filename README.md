@@ -75,6 +75,38 @@ pytest
 ruff check .
 ```
 
+## 실행 방법
+
+### 전체 파이프라인 한 번에 실행
+`main.py`가 `src/` 각 모듈의 `main()`을 아래 순서대로 실행한다.
+
+```bash
+python main.py
+```
+
+1. `download` : 원본 parquet 다운로드
+2. `load` : Pandas/Polars 로딩 비교
+3. `clean` : 결측치·중복 처리, 필터링, 파생변수
+4. `schema` : Pydantic 스키마 검증
+5. `viz` : Seaborn/Plotly 차트 생성
+6. `stats` : 기술통계·상관계수·t-test
+7. `ml` : sklearn Pipeline 학습·평가·저장
+8. `report` : `reports/report.md` 자동 생성
+
+### 모듈 단위 실행
+특정 단계만 실행하고 싶다면 해당 모듈을 개별적으로 실행한다.
+
+```bash
+python -m src.download
+python -m src.load
+python -m src.clean
+python -m src.schema
+python -m src.viz
+python -m src.stats
+python -m src.ml
+python -m src.report
+```
+
 ## 협업 규칙
 - 탐색은 `notebooks/`, 검증된 재사용 로직은 `src/`로 이동 — 두 역할을 섞지 않는다.
 - `data/raw/`, `data/processed/`, `models/`는 git에 올리지 않는다 (`.gitignore` 참고).
