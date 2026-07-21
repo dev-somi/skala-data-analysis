@@ -22,3 +22,4 @@ ipykernel
 
 # 기타
 requests
+tabulate  # DataFrame.to_markdown() 에 필요 (report.py)
