@@ -1,6 +1,6 @@
 """
 ==============================================================================
- 프로그램명 : load
+ 프로그램명 : clean
  작성자     : 광주 4반 박소미
  작성일     : 2026-07-21
 ------------------------------------------------------------------------------
@@ -25,6 +25,7 @@
    v1.2  2026-07-21  한세훈  handle_missing_pandas / handle_missing_polars 추가, 비교 항목에 결측치 처리 반영
 ==============================================================================
 """
+ 
 import time
 from pathlib import Path
  
@@ -356,6 +357,6 @@ def compare_loaders(path: Path = DATA_PATH, use_cols: list = None) -> pd.DataFra
  
     return summary
  
-# 테스트용 로컬 함수
+ 
 if __name__ == "__main__":
     compare_loaders()
