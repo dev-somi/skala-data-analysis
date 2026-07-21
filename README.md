@@ -37,6 +37,7 @@ skala-data-analysis/
 │   └── 03_stats_and_ml.ipynb     # 기술통계·t-test + ML Pipeline
 ├── src/                 # 노트북에서 검증된 로직을 옮겨 담는 재사용 모듈
 │   ├── download.py       # 데이터 다운로드
+│   ├── load.py            # Pandas/Polars 양쪽 로딩 및 비교
 │   ├── clean.py           # 결측치·중복 처리, 필터링
 │   ├── schema.py          # Pydantic v2 스키마 검증
 │   ├── viz.py              # 시각화 함수
@@ -46,8 +47,7 @@ skala-data-analysis/
 ├── models/               # joblib으로 저장된 모델 (git 미추적)
 ├── reports/
 │   └── report.md          # 자동 생성 리포트
-├── tests/                 # pytest 테스트
-└── .github/workflows/pytest.yml   # ruff + pytest CI
+└── tests/                 # pytest 테스트
 ```
 
 ## 환경 설정

@@ -1,14 +1,15 @@
 """
 ==============================================================================
- 프로그램명 : clean
+ 프로그램명 : load
  작성자     : 광주 4반 박소미
  작성일     : 2026-07-21
 ------------------------------------------------------------------------------
  [프로그램 설명]
-   load.py로 로딩한 데이터의 결측치·중복 처리 및 분석 대상 필터링을 담당한다.
-     1) drop_missing_and_duplicates() : 결측치·중복 제거
-     2) filter_valid_trips() : payment_type==1, fare_amount>0, trip_distance>0 필터
-     3) add_tip_pct() : tip_pct = tip_amount / fare_amount 컬럼 추가
+   원본 parquet 데이터를 Pandas와 Polars 양쪽 방식으로 각각 로딩하고
+   결과(로딩 시간, dtype, 행 수 등)를 비교한다.
+     1) load_with_pandas() : pandas.read_parquet 기반 로딩
+     2) load_with_polars() : polars.read_parquet 기반 로딩
+     3) compare_loaders() : 두 결과 비교 (로딩 시간·dtype·shape 등)
 
  [변경 내역]
    v1.0  2026-07-21  박소미  최초 작성 (구조만, 로직 미구현)
