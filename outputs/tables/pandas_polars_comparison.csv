@@ -1,0 +1,2 @@
+﻿pandas_rows,pandas_columns,pandas_load_seconds,pandas_memory_mb,polars_rows,polars_columns,polars_load_seconds,polars_estimated_memory_mb,same_shape
+4090836,20,1.7774,580.62,4090836,20,0.1306,550.13,True

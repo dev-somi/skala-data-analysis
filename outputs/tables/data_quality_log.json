@@ -1,0 +1,14 @@
+{
+  "raw_rows": 4090836,
+  "raw_columns": 20,
+  "duplicate_rows_before": 0,
+  "rows_after_duplicate_removal": 4090836,
+  "removed_missing_required": 955371,
+  "removed_outside_target_month": 14,
+  "removed_non_credit_card": 407876,
+  "removed_basic_outliers": 88309,
+  "removed_tip_rate_outliers": 3535,
+  "final_rows": 2635731,
+  "final_columns": 31,
+  "final_tip_payment_rate": 0.902007
+}

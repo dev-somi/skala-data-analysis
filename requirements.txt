@@ -22,3 +22,11 @@ ipykernel
 
 # 기타
 requests
+
+# 수치 계산 및 Markdown 표 생성
+numpy>=1.26
+tabulate>=0.9
+
+# 수치 계산 및 Markdown 표 생성
+numpy>=1.26
+tabulate>=0.9

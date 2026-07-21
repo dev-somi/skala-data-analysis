@@ -1,0 +1,54 @@
+{
+  "model": "LogisticRegression",
+  "target": "tip_paid",
+  "train_rows": 240000,
+  "test_rows": 60000,
+  "positive_rate_test": 0.902,
+  "accuracy": 0.7893333333333333,
+  "precision": 0.9428028523848158,
+  "recall": 0.8159460458240946,
+  "f1": 0.8747994215416312,
+  "roc_auc": 0.7219042905410501,
+  "classification_report": {
+    "0": {
+      "precision": 0.24320012156207263,
+      "recall": 0.5443877551020408,
+      "f1-score": 0.3362041802331688,
+      "support": 5880.0
+    },
+    "1": {
+      "precision": 0.9428028523848158,
+      "recall": 0.8159460458240946,
+      "f1-score": 0.8747994215416312,
+      "support": 54120.0
+    },
+    "accuracy": 0.7893333333333333,
+    "macro avg": {
+      "precision": 0.5930014869734442,
+      "recall": 0.6801669004630677,
+      "f1-score": 0.6055018008874,
+      "support": 60000.0
+    },
+    "weighted avg": {
+      "precision": 0.8742417847641869,
+      "recall": 0.7893333333333333,
+      "f1-score": 0.8220170878934018,
+      "support": 60000.0
+    }
+  },
+  "input_features": [
+    "trip_distance",
+    "fare_amount",
+    "trip_duration_min",
+    "passenger_count",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "excluded_leakage_features": [
+    "tip_amount",
+    "tip_rate",
+    "tip_rate_pct",
+    "tip_rate_total",
+    "total_amount"
+  ]
+}

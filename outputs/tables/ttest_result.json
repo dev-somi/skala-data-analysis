@@ -1,0 +1,19 @@
+{
+  "test": "Welch independent two-sample t-test",
+  "null_hypothesis": "단거리와 장거리의 평균 팁 비율은 같다.",
+  "alternative_hypothesis": "단거리와 장거리의 평균 팁 비율은 다르다.",
+  "short_trip_definition": "trip_distance <= 3 miles",
+  "long_trip_definition": "trip_distance > 5 miles",
+  "short_trip_n": 1886412,
+  "long_trip_n": 469376,
+  "short_trip_mean_tip_rate": 0.2658387162088733,
+  "long_trip_mean_tip_rate": 0.17154101241112504,
+  "mean_difference_long_minus_short": -0.09429770379774824,
+  "t_statistic": 494.21493435732845,
+  "p_value": 0.0,
+  "alpha": 0.05,
+  "statistically_significant": true,
+  "cohens_d": -0.8032431602236918,
+  "interpretation": "p-value가 0.05보다 작으므로 귀무가설을 기각한다. 단거리와 장거리 운행의 평균 팁 비율 차이는 통계적으로 유의하다.",
+  "caution": "통계적 유의성과 실질적 크기는 다르므로 평균 차이와 Cohen's d를 함께 본다."
+}

@@ -34,3 +34,11 @@ __pycache__/
 # GitHub Actions workflow — 현재 PAT에 workflow 스코프가 없어 push 불가.
 # workflow 스코프가 있는 토큰/계정으로 추가할 때 이 줄을 지울 것.
 .github/workflows/
+
+# 개인 코드 이동 작업용 임시 폴더
+temp_dayoung_source/
+backup_team_source/
+
+# 개인 코드 이동 작업용 임시 폴더
+temp_dayoung_source/
+backup_team_source/
